@@ -1,0 +1,15 @@
+<h1>New Restaurant</h1>
+<div id="create-form">
+  <%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :category %>
+  <%= f.button :submit %>
+<% end %>
+</div>
+<br>
+<br>
+<div class="button">
+  <%= link_to "back to HOME", root_path %>
+</div>

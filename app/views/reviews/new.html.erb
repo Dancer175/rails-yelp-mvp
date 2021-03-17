@@ -1,0 +1,13 @@
+<h2>Leave a Review for <%= @restaurant.name %> </h2>
+<div id="create-form">
+  <%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating%>
+  <%= f.button :submit %>
+<% end %>
+<br>
+<br>
+<div class="button">
+  <%= link_to "back to HOME", root_path %>
+</div>
+
